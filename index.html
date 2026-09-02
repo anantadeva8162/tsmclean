@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TSM CLEAN — Pendaftaran</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="speed-line line-1"></div>
+  <div class="speed-line line-2"></div>
+  <div class="speed-line line-3"></div>
+
+  <main class="page">
+    <section class="hero">
+      <div class="badge">TSM • MOTORCYCLE DETAILING</div>
+      <h1>TSM <span>CLEAN</span></h1>
+      <p class="tagline">Clean bike. Sharp ride.</p>
+      <p class="intro">Isi data sepeda motor kamu untuk melakukan pendaftaran layanan TSM CLEAN.</p>
+    </section>
+
+    <section class="card">
+      <div class="card-top">
+        <div>
+          <p class="eyebrow">REGISTRATION FORM</p>
+          <h2>Data Kendaraan</h2>
+        </div>
+        <div class="quota">
+          <strong id="quotaText">30</strong>
+          <span>KUOTA</span>
+        </div>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-label">
+          <span>Kuota pendaftaran</span>
+          <strong id="progressText">0 / 30</strong>
+        </div>
+        <div class="progress"><div id="progressBar"></div></div>
+      </div>
+
+      <form id="registrationForm">
+        <label>
+          <span>01 — EMAIL</span>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+        </label>
+
+        <label>
+          <span>02 — NAMA</span>
+          <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required>
+        </label>
+
+        <label>
+          <span>03 — MERK SEPEDA MOTOR</span>
+          <input type="text" id="merk" name="merk" placeholder="Contoh: Honda, Yamaha, Suzuki..." required>
+        </label>
+
+        <label>
+          <span>04 — NOPOL</span>
+          <input type="text" id="nopol" name="nopol" placeholder="Contoh: AG 1234 XX" required>
+        </label>
+
+        <button type="submit" id="submitBtn">
+          <span id="btnText">DAFTAR SEKARANG</span>
+          <span class="arrow">→</span>
+        </button>
+
+        <p class="status" id="status"></p>
+      </form>
+
+      <div class="success" id="successBox">
+        <div class="check">✓</div>
+        <p class="eyebrow">REGISTRATION SUCCESS</p>
+        <h2>Pendaftaran Berhasil!</h2>
+        <p id="successMessage">Data kamu sudah tercatat.</p>
+      </div>
+
+      <div class="closed" id="closedBox">
+        <div class="closed-icon">×</div>
+        <p class="eyebrow">REGISTRATION CLOSED</p>
+        <h2>Kuota Penuh</h2>
+        <p>Maaf, kuota TSM CLEAN sebanyak 30 pendaftar telah terpenuhi.</p>
+      </div>
+    </section>
+
+    <footer>
+      <span>TSM CLEAN</span>
+      <span>•</span>
+      <span>MOTORCYCLE CARE</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
