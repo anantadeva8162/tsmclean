@@ -1,6 +1,6 @@
 const SHEET_NAME = "Pendaftar";
 const MAX = 60;
-const SUBJECT = "Konfirmasi Pendaftaran TSM CLEAN";
+const SUBJECT = "Konfirmasi Pendaftaran TSM SERVIS";
 
 function getSheet_() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -21,7 +21,7 @@ function doGet(e) {
     return json_({success:true, count:count, max:MAX});
   }
 
-  return json_({success:true, message:"TSM CLEAN API aktif.", count:count, max:MAX});
+  return json_({success:true, message:"TSM SERVIS API aktif.", count:count, max:MAX});
 }
 
 function doPost(e) {
@@ -69,7 +69,7 @@ function doPost(e) {
       subject: SUBJECT,
       htmlBody:
         '<div style="font-family:Arial,sans-serif;max-width:600px;margin:auto;color:#222">' +
-        '<h1 style="color:#e53935">TSM CLEAN</h1>' +
+        '<h1 style="color:#e53935">TSM SERVIS</h1>' +
         '<p>Halo <b>' + escapeHtml_(nama) + '</b>,</p>' +
         '<p>Pendaftaran kamu telah berhasil dan tercatat.</p>' +
         '<div style="background:#f3f3f3;padding:20px;border-radius:10px">' +
@@ -77,7 +77,7 @@ function doPost(e) {
         '<p><b>Merk:</b> ' + escapeHtml_(merk) + '</p>' +
         '<p><b>NOPOL:</b> ' + escapeHtml_(nopol) + '</p>' +
         '</div>' +
-        '<p>Terima kasih telah melakukan pendaftaran di TSM CLEAN.</p>' +
+        '<p>Terima kasih telah melakukan pendaftaran di TSM SERVIS.</p>' +
         '</div>'
     });
 
