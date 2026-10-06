@@ -1,4 +1,4 @@
-# TSM CLEAN — Website Pendaftaran
+# TSM SERVIS — Website Pendaftaran
 
 Website statis untuk GitHub Pages + Google Sheets/Apps Script sebagai backend.
 
