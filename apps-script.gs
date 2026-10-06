@@ -1,5 +1,5 @@
 const SHEET_NAME = "Pendaftar";
-const MAX = 30;
+const MAX = 60;
 const SUBJECT = "Konfirmasi Pendaftaran TSM CLEAN";
 
 function getSheet_() {
@@ -47,7 +47,7 @@ function doPost(e) {
     const count = Math.max(sheet.getLastRow() - 1, 0);
 
     if (count >= MAX) {
-      return json_({success:false, message:"Maaf, kuota 30 pendaftar sudah penuh.", count:count});
+      return json_({success:false, message:"Maaf, kuota 60 pendaftar sudah penuh.", count:count});
     }
 
     // Cegah email atau NOPOL yang sama mendaftar dua kali.
