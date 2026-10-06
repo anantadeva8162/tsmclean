@@ -3,7 +3,7 @@
   Contoh: https://script.google.com/macros/s/XXXXXXXX/exec
 */
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzYeK2x7qrg5mk4N4Ww92i8AIQpm6oA18DJGumo_GwDSp-8tTwGpwLCCWs8dJBWbQSQ/exec";
-const MAX = 30;
+const MAX = 60;
 
 const form = document.getElementById("registrationForm");
 const btn = document.getElementById("submitBtn");
